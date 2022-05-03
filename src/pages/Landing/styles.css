@@ -1,0 +1,102 @@
+/*Mobile View */
+#landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+#landing main {
+  margin: 3.2rem auto;
+  width: 90%;
+  margin-top: 1rem;
+}
+
+#landing main strong {
+  color: #000000;
+  font-size: 2.5rem;
+  font-family: Archivo;
+}
+
+#landing main .card-support {
+  background: var(--color-background-card);
+  border: 1.5rem solid var(--color-line-in-white-card);
+  border-radius: 3rem;
+}
+
+#landing main .card-support strong {
+  margin-left: 1rem;
+}
+
+#landing main .card-support p {
+  color: #000000;
+  font: 700 1.6rem Archivo;
+  line-height: 3.6rem;
+  text-align: justify;
+  padding: 1rem 3.9rem;
+}
+
+#landing main .card-support header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#landing main .card-support img {
+  height: 10rem;
+  width: 10rem;
+}
+
+#landing main .block-group-barcas {
+  background: var(--color-background-card);
+  border: 1.5rem solid var(--color-line-in-white-card);
+  border-radius: 3rem;
+}
+
+#landing main .block-group-barcas .card-barcas + .card-barcas {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  /*Desktop View*/
+  #landing {
+    max-width: 100%;
+  }
+
+  #landing main .block-group-camp {
+    display: flex;
+    justify-content: center;
+  }
+
+  #landing main .block-group-camp .card-item-landing + .card-item-landing {
+    margin-top: 0rem;
+  }
+
+  #landing main .block-circuit .card-item-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #landing main .block-circuit .card-item-landing header img {
+    height: 50rem;
+  }
+
+  #landing main .block-circuit .block-sponsors .card-item-landing {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #landing .block-footer .block-icons .block-icons-group strong {
+    display: unset;
+  }
+
+  #landing main .block-group-barcas {
+    display: grid;
+    grid-template-columns: repeat(2, 60rem);
+  }
+
+  #landing main .block-group-barcas .card-barcas + .card-barcas {
+    margin-top: 0rem;
+  }
+}
