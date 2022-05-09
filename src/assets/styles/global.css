@@ -15,7 +15,8 @@ body,
 }
 
 body {
-  background: #ffffff;
+  background: url("../../assets/images/image.jpg");
+  background-size: cover;
 }
 
 #root {
