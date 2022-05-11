@@ -5,12 +5,13 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #landing .block-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 20rem);
+  display: flex;
+  margin-top: 35rem;
 }
 
 #landing .block-grid .card-item {
@@ -20,13 +21,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: 38rem 1rem;
   height: 10rem;
+  width: 20rem;
   transition: background-color 0.2s;
 }
 
 #landing .block-grid .card-item:hover {
   background-color: #04bf58;
+}
+
+#landing .block-grid .card-item div {
+  display: none;
+}
+
+#landing .block-grid .card-item:hover div {
+  display: flex;
+  position: absolute;
+  border: solid 0.5rem #04bf58;
+  border-radius: 1rem;
+  height: 25rem;
+  width: 100rem;
+  left: 15rem;
+  margin-top: 36rem;
+  background-color: #04bf58;
+}
+
+#landing .block-grid .card-item:hover div p {
+  text-align: justify;
+  color: #000000;
+}
+
+#landing .block-grid .card-item:hover .list-reaprov ul {
+  padding-left: 2rem;
 }
 
 #landing .block-grid .card-item button {
@@ -36,4 +63,30 @@
   border: none;
   cursor: pointer;
   font: 700 2rem Archivo;
+}
+
+#landing .text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing .text-center strong {
+  font: 700 3rem Archivo;
+}
+
+#landing .map-google {
+  background-color: #e4e0e0;
+  margin: 5rem 0rem;
+  height: 100rem;
+  width: 100rem;
+  padding: 9rem;
+  border: 0rem;
+  border-radius: 1rem;
+}
+
+#landing .map-google p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
