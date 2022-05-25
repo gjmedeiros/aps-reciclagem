@@ -13,7 +13,7 @@ export default function Search({ panTo }) {
     clearSuggestions
   } = usePlacesAutocomplete({
     requestOptions: {
-      /* Define search scope here */
+      type: ["hospital"]
     },
     debounce: 300
   });
@@ -59,8 +59,7 @@ export default function Search({ panTo }) {
       <input
         value={value}
         onChange={handleInput}
-        disabled={!ready}
-        placeholder="Where are you going?"
+        placeholder="Onde vamos?"
       />
       {/* We can use the "status" to decide whether we should display the dropdown or not */}
       {status === "OK" && <ul>{renderSuggestions()}</ul>}

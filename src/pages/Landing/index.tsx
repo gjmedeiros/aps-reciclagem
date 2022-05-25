@@ -59,19 +59,6 @@ function Landing() {
       </div>
       <div className="map-google" id="map">
         <Map/>
-        {/* {isLoaded ? (
-          <GoogleMap
-            mapContainerStyle={{ width: "100%", height: "100%", position:"absolute" }}
-            center={{
-              lat: -23.630618,
-              lng: -46.693256,
-            }}
-            zoom={15}
-          >
-          </GoogleMap>
-        ) : (
-          <></>
-        )} */}
       </div>
     </div>
   );
