@@ -1,7 +1,9 @@
 import { Button } from "react-bootstrap";
+import Map from "../maps/map"
 import "./styles.css";
 
 function Landing() {
+  
   return (
     <div id="landing" className="container">
       <div className="block-grid">
@@ -55,11 +57,25 @@ function Landing() {
       <div className="text-center">
         <strong>Qual o método ideal para descarte?</strong>
       </div>
-      <div className="map-google">
-        <p>Teste</p>
+      <div className="map-google" id="map">
+        <Map/>
+        {/* {isLoaded ? (
+          <GoogleMap
+            mapContainerStyle={{ width: "100%", height: "100%", position:"absolute" }}
+            center={{
+              lat: -23.630618,
+              lng: -46.693256,
+            }}
+            zoom={15}
+          >
+          </GoogleMap>
+        ) : (
+          <></>
+        )} */}
       </div>
     </div>
   );
 }
 
 export default Landing;
+
