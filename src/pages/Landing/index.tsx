@@ -31,12 +31,18 @@ function Landing() {
         </div>
 
         <div className="card-item">
-          <Button>Reaproveitamento</Button>
+          <Button>Reciclando</Button>
           <div className="list-reaprov">
-            <ul>
-              <li>Sabão</li>
-              <li>Biodiesel</li>
-            </ul>
+            <p>
+              Então, surge a questão: o que fazer com o óleo de cozinha usado?
+              Bem, atualmente, a melhor opção é realizar a coleta seletiva desse
+              óleo, colocando-o em garrafas PET e destinando-as à reciclagem.
+              Essa reciclagem do óleo de cozinha usado pode ser feita em casa
+              mesmo ou podemos levá-lo para postos de coleta, busque por
+              instituições ou empresas que prestam coleta seletiva para que esse
+              material seja descartado corretamente e utilizado para produção de
+              biodiesel, tintas a óleo e até sabão.
+            </p>
           </div>
         </div>
 
@@ -70,8 +76,10 @@ function Landing() {
       <div className="text-center">
         <strong>Pontos de Coleta</strong>
       </div>
-      <div className="map-google" id="map">
-        <Map />
+      <div className="block-map">
+        <div className="map-google" id="map">
+          <Map />
+        </div>
       </div>
     </div>
   );
