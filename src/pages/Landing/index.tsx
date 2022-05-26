@@ -55,7 +55,7 @@ function Landing() {
       </div>
 
       <div className="text-center">
-        <strong>Qual o método ideal para descarte?</strong>
+        <strong>Locais de reciclagem nas proximidades</strong>
       </div>
       <div className="map-google" id="map">
         <Map/>
