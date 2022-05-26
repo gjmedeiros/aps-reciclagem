@@ -39,7 +39,7 @@ export default function useMap() {
   const [map, setMap] = React.useState(/** @type google.maps.Map */ (null));
   return (
     <div>
-      <GoogleMap
+      {isLoaded ? <GoogleMap
         id="map"
         mapContainerStyle={mapContainerStyle}
         zoom={13}
@@ -50,7 +50,8 @@ export default function useMap() {
         <Marker position={points[0]} />
         <Marker position={points[1]} />
         <Marker position={points[2]} />
-      </GoogleMap>
+      </GoogleMap> : null}
+      
     </div>
   );
 }
