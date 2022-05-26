@@ -29,6 +29,20 @@ let points = [
     lat: -23.64939,
     lng: -46.711507,
   },
+  { lat: -23.63004404150676,
+    lng: -46.71075780516515,
+  },
+  { lat: -23.622622493471766,
+    lng: -46.70141784211102,
+  },
+  {
+    lat: -23.62758747699844,
+    lng: -46.68505575561516,
+  },
+  {
+    lat: -23.640656683070763,
+    lng: -46.727227263499415,
+  },
 ];
 export default function useMap() {
   const { isLoaded, loadError } = useLoadScript({
@@ -39,19 +53,23 @@ export default function useMap() {
   const [map, setMap] = React.useState(/** @type google.maps.Map */ (null));
   return (
     <div>
-      {isLoaded ? <GoogleMap
-        id="map"
-        mapContainerStyle={mapContainerStyle}
-        zoom={13}
-        center={center}
-        options={options}
-        onLoad={map => setMap(map)}
-      >
-        <Marker position={points[0]} />
-        <Marker position={points[1]} />
-        <Marker position={points[2]} />
-      </GoogleMap> : null}
-      
+      {isLoaded ? (
+        <GoogleMap
+          id="map"
+          mapContainerStyle={mapContainerStyle}
+          zoom={14}
+          center={center}
+          options={options}
+          onLoad={(map) => setMap(map)}
+        >
+        <Marker position={points[0]}></Marker>
+        <Marker position={points[1]}></Marker>
+        <Marker position={points[2]}></Marker>
+        <Marker position={points[3]}></Marker>
+        <Marker position={points[4]}></Marker>
+        <Marker position={points[5]}></Marker>
+        </GoogleMap>
+      ) : null}
     </div>
   );
 }
