@@ -11,7 +11,7 @@
 
 #landing .block-grid {
   display: flex;
-  margin-top: 35rem;
+  margin-top: 80rem;
 }
 
 #landing .block-grid .card-item {
@@ -38,21 +38,24 @@
 #landing .block-grid .card-item:hover div {
   display: flex;
   position: absolute;
+
   border: solid 0.5rem #04bf58;
   border-radius: 1rem;
   height: 25rem;
   width: 100rem;
-  left: 15rem;
+  left: 25rem;
   margin-top: 36rem;
-  background-color: #04bf58;
+  background-color: #ffffff;
 }
 
 #landing .block-grid .card-item:hover div p {
   text-align: justify;
+  padding: 1rem;
   color: #000000;
 }
 
 #landing .block-grid .card-item:hover .list-reaprov ul {
+  padding: 1rem;
   padding-left: 2rem;
 }
 
@@ -78,7 +81,7 @@
 #landing .map-google {
   background-color: #e4e0e0;
   margin: 5rem 0rem;
-  height: 100rem;
+  height: 65rem;
   width: 100rem;
   padding: 9rem;
   border: 0rem;
