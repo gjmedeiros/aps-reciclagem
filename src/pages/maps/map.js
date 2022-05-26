@@ -37,8 +37,6 @@ export default function useMap() {
   });
 
   const [map, setMap] = React.useState(/** @type google.maps.Map */ (null));
-  const [selected, setSelected] = React.useState(null);
-
   return (
     <div>
       <GoogleMap
